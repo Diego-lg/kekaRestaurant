@@ -1,0 +1,40 @@
+.about-us {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #ff0; /* Yellow */
+  color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-us::before {
+    content: '';
+    position: absolute;
+    top: -50px; /* Start above the section */
+    left: -50px; /* Start to the left */
+    width: 150%; /* Larger than the section */
+    height: 150%; /* Larger than the section */
+    background-image: url('https://github.com/Diego-lg/3dbrocolongo/blob/main/IMG-20220826-WA0026.jpg?raw=true');
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+    transform: rotate(15deg); /* Rotate the background */
+}
+
+.about-us h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Monoton', cursive;
+  text-shadow: 2px 2px 4px #f0f;
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px; /* Limit paragraph width */
+  margin: 0 auto; /* Center the paragraph */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,71 @@
+.hero {
+  background-image: url('https://github.com/Diego-lg/3dbrocolongo/blob/main/IMG-20220826-WA0026.jpg?raw=true');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 200px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 0, 255, 0.4);
+  backdrop-filter: blur(5px);
+  padding: 40px;
+  border-radius: 20px;
+  transform: skew(-10deg, 5deg);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  font-family: 'Monoton', cursive;
+  text-shadow: 3px 3px 6px #000;
+  animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+    0% { color: #0ff; }
+    50% { color: #ff0; }
+    100% { color: #0ff; }
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  animation: glitch 0.8s infinite;
+}
+
+.button {
+  display: inline-block;
+  background-color: #0ff;
+  color: #f0f;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-weight: bold;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+.button:hover {
+  transform: scale(1.1) rotate(2deg);
+  background-color: #ff0;
+  color: #000;
+}
